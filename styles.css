@@ -6,12 +6,15 @@ html {
   background-color: #F7F7F7;
 }
 
+body {
+ height: 1600px;
+}
+
 header {
-  background-image: url(images/headingBackground.png);
+  background-image: url(images/header.png);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #485069;
   height: 150px;
 }
 
@@ -21,14 +24,18 @@ nav {
 }
 
 .nav-button {
-  background-color: #02132C;
+  background-color: #CDCDCD;
   border: none;
-  color: #F8E78F;
+  color: #A27247;
   padding: 5px;
   margin-left: 15px;
   height: 25px;
   width: 110px;
   margin-bottom: 10px;
+}
+
+.nav-button:hover {
+  opacity: 50%;
 }
 
 .logo-container {
@@ -39,28 +46,37 @@ nav {
   margin-right: 5px;
 }
 
+img {
+  opacity: 85%;
+}
+
 .logo-pic {
   height: 90px;
   width: 220px;
   margin-bottom: 5px;
   margin-top: 5px;
+  border: 2px solid #AE935F;
 }
 
 .dropdown {
-  background-color: #2B394F;
+  background-color: #CDCDCD;
   height: 40px;
   margin-top: 5px;
   margin-bottom: 5px;
   border: none;
+  color: #AE935F;
+  text-align: center;
 }
 
-/* img {
-  width: 340px;
-  height: 150px;
-  max-width: 500px;
-  max-height: 300px;
+.dropdown:hover {
+  opacity: 50%;
+}
 
-} */
+select {
+  -webkit-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 
 h1 {
   margin: 25px 0 25px 10px;
@@ -87,22 +103,54 @@ div {
   margin-bottom: 20px;
   text-align: center;
   line-height: 50px;
+  word-wrap: break-word;
 }
 
-.num {
+footer {
   font-size: xx-large;
   margin-top: 10px;
+  color: #AE935F;
 }
 
-.room-pic {
-  z-index: 0;
-}
+/* .room-pic:hover {
+  opacity: 50%;
+  cursor: grab;
+} */
 
 .pic-button {
+  background-image: url(images/saveIcon.png);
+  opacity: 50%;
   z-index: 2;
-  font-size: 5px;
-  width: 10px;
-  height: 5px;
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 30px;
+  max-width: 40px;
+  max-height: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.pic-button:hover {
+  opacity: 150%;
+}
+
+.pic-arrow {
+background-image: url(images/nextPageIcon.png);
+opacity: 50%;
+z-index: 2;
+background-size:cover;
+background-repeat: no-repeat;
+width: 35px;
+height: 35px;
+max-width: 40px;
+max-height: 35px;
+margin-top: 10px;
+margin-right: 10px;
+}
+
+.pic-arrow:hover {
+  opacity: 150%;
 }
 
 .grid-container {
@@ -113,8 +161,7 @@ div {
 .card {
   height: 440px;
   width: 340px;
-  padding: 1px;
-  border: 2px #2B394F solid;
+  border: 2px #AE935F solid;
   margin: 0 5px 10px 5px;
 }
 
@@ -123,7 +170,18 @@ div {
   background-repeat: no-repeat;
   display: flex;
   width: 340px;
+  justify-content: space-between;
+	align-items: flex-start;
   height: 160px;
+  border-bottom: 2px solid #AE935F;
+}
+
+.card-header:hover {
+  opacity: 50%;
+}
+
+.lower-card {
+  padding-left: 8px;
 }
 
 .living-room {
@@ -147,7 +205,7 @@ div {
 }
 
 .laundry {
-  background-image: url(images/Laundry.png);
+  background-image: url(images/laundry.png);
 }
 
 .office {
@@ -157,3 +215,4 @@ div {
 .lighting {
   background-image: url(images/light.png);
 }
+
